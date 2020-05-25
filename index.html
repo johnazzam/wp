@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- meta http-equiv="X-Frame-Options" content="deny" -->
+    <title>My First Webpage</title>
+
+    <!-- Stylesheets, you can have more than one. -->
+    <link id='wireframecss' type="text/css" rel="stylesheet" href="wireframe.css"/>
+    <link id='stylecss' type="text/css" rel="stylesheet" href="style.css">
+    <link id='testcss' type="text/css" rel="stylesheet" href="testing.css">
+    
+    <!-- Javascript, you can have more than one. -->
+    <script src='wireframe.js'></script>
+
+  </head>
+
+  <body>
+
+    <header>
+      <!-- Image sourced from www.rmit.edu.au for educational purposes only -->
+      <div><img src='../media/RMIT-Logo.png' alt='RMIT University logo' height=80 />Insert Your Name Here
+      </div>
+    </header>
+
+    <nav>
+      Assignments:
+      <!-- link locations: relative to current directory -->
+      <ul>
+        <li><a href="a2/index.php" target="_blank">A2</a></li>
+        <li><a href="a3/index.php" target="_blank">A3</a></li>
+        <li><a href="a4/index.php" target="_blank">A4</a></li>
+      </ul> |
+      <!-- link locations: relative to e54061's public_html directory -->
+      <a href="/~e54061/wp/lectures" target="_blank">Lectures 0 - 11</a> |
+      <a href="/~e54061/secure" target="_blank">Secure Resources Area</a> | 
+      <!-- link location: external -->
+      <a href='https://drive.google.com/open?id=1uSRn6PHDcpsUtmFQ6MPMM-g2go4o22VP' target="_blank">WPOUA-Public</a>
+    </nav>
+
+    <main>
+      <article id='about-me'>
+        <h2>About me</h2>
+        <p>
+          <img src='../media/avatar.png' width='200' alt='my photo' />
+        </p>
+        <section id="more-about-me">
+          <div>Who is your tutor / instructor</div>
+          <div>Trevor Reynolds</div>
+
+          <div>Who is your labber / workshopper</div>
+          <div>Trevor Reynolds</div>
+
+          <div>Have you any programming or web design experience?</div>
+          <div>Yes I have. Well, I like to think so ...</div>
+
+          <div>Do you see yourself as a programmer or designer, or both?</div>
+          <div>_</div>
+
+          <div>What has brought you to this course at RMIT?</div>
+          <div>_</div>
+
+          <div>What are you hoping to get out of the course?</div>
+          <div>_</div>
+
+          <div>What websites do you use the most? (NB: "family friendly" !)</div>
+          <div>_</div>
+
+          <div>Do you have any interests or hobbies?</div>
+          <div>_</div>
+        </section>
+      </article>
+      <aside>
+        <div align='center'>Deprecated code sample.</div>
+      </aside>
+      <article id='project'>
+        <p>In this space you are asked to compose a website analysis and redevelopment proposal for the website found at this location:<br><a href='https://www.sites.google.com/site/anzacdouglasraymondbaker' target='_blank'>ANZAC Douglas Raymond Baker - Letters Home</a></p>
+      </article>
+    </main>
+
+    <footer>
+      &copy; Insert your name here
+      <script>
+        document.write(new Date().getFullYear());
+      </script>.
+      Put footer info and other <a href=' '>secondary links</a> here (but only if you wish to). <button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button>
+    </footer>
+    
+  </body>
+</html>
