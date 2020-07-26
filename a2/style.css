@@ -1,11 +1,11 @@
- /* Sets the colour of the background*/
+/* Sets the colour of the background*/
 body {
-   background-color: lightgrey;
- }
-  /* Alighning the heading*/
- h2 {
+  background-color: grey;
+}
+/* Alighning the heading*/
+h2 {
   text-align: center;
- }
+}
 
 h3 {
   font-weight: bolder;
@@ -41,59 +41,99 @@ https://www.w3schools.com/howto/howto_css_parallax.asp*/
   text-align: center;
 }
 
- /* Making the footer distinct by changing colour */
-footer {
-   padding: 16px;
-   float: center;
-   text-align: center;
-   display: block;
-   color: #black;
-   background-color: #cccccc;
-   overflow: hidden;
-}
 
- /* Rounds the image by -25% */
+
+/* Rounds the image by -25% */
 img {
   border-radius: 75%;
 }
 
+head {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+body {
+  margin-left: 100px;
+  margin-right:100px;
+
+}
+
+.home {
+  padding: 40px;
+}
+
+.Introduction {
+  padding: 40px;
+  background-color: #717D7E;
+}
+
+.Letters-and-Post-Cards {
+  padding: 40px;
+}
+
+.Action-Places {
+  padding: 40px;
+  background-color: #717D7E;
+}
+
+.Links-to-related-materials {
+  padding: 40px;
+}
+
+.Comments {
+  padding: 40px;
+  background-color: #717D7E;
+}
+
+/* Making the footer distinct by changing colour */
+footer {
+  padding: 16px;
+  float: center;
+  text-align: center;
+  display: block;
+  color: #black;
+  background-color: #cccccc;
+  overflow: hidden;
+}
+
 /* The following code has been referenced from W3 schools for assistance in creating the sticky navbar effect.
 https://www.w3schools.com/howto/howto_js_navbar_sticky.asp */
- /* Style the navbar */
- #navbar {
-   overflow: hidden;
-   background-color: #333;
- }
+/* Style the navbar */
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
 
- /* Navbar links */
- #navbar a {
-   float: left;
-   display: block;
-   color: #f2f2f2;
-   text-align: center;
-   padding: 14px;
-   text-decoration: none;
-   align-content: center;
- }
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  align-content: center;
+}
 
- /* The contents of the page */
- .content {
-   padding: 16px;
-   text-align: center;
- }
+/* The contents of the page */
+.content {
+  padding: 16px;
+  text-align: center;
+}
 
- /* The sticky class is added to the navbar with JS when it reaches its scroll position */
- .sticky {
-   position: fixed;
-   top: 0;
-   width: 100%;
- }
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
- /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
- .sticky + .content {
-   padding-top: 60px;
- }
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
 
- .Home {
-   background-image: image();
- }
+.Home {
+  background-image: image();
+}
