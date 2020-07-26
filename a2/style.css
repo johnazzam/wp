@@ -1,23 +1,64 @@
+ /* Sets the colour of the background*/
 body {
-   background-color: grey;
+   background-color: lightgrey;
  }
- h1 {
-   background–color: purple;
+  /* Alighning the heading*/
+ h2 {
+  text-align: center;
  }
 
+h3 {
+  font-weight: bolder;
+}
+
+h4 {
+  font-weight: bold;
+}
+
+/* The following code has been referenced from W3 schools for assistance in creating the parallax effect.
+https://www.w3schools.com/howto/howto_css_parallax.asp*/
+.parallax {
+  /* The image used */
+  background-image: url("/home/sl9/S3767649/public_html/media/londonGazette.png");
+
+  /* Set a specific height */
+  min-height: 300px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 
+
+#Introduction {
+  text-align: left;
+}
+
+.abbreviations {
+  text-align: center;
+}
+
+ /* Making the footer distinct by changing colour */
 footer {
    padding: 16px;
-   float: left;
+   float: center;
+   text-align: center;
    display: block;
    color: #black;
    background-color: #cccccc;
    overflow: hidden;
 }
 
+ /* Rounds the image by -25% */
+img {
+  border-radius: 75%;
+}
 
-
+/* The following code has been referenced from W3 schools for assistance in creating the sticky navbar effect.
+https://www.w3schools.com/howto/howto_js_navbar_sticky.asp */
  /* Style the navbar */
  #navbar {
    overflow: hidden;
@@ -32,11 +73,13 @@ footer {
    text-align: center;
    padding: 14px;
    text-decoration: none;
+   align-content: center;
  }
 
- /* Page content */
+ /* The contents of the page */
  .content {
    padding: 16px;
+   text-align: center;
  }
 
  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
@@ -49,4 +92,8 @@ footer {
  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
  .sticky + .content {
    padding-top: 60px;
+ }
+
+ .Home {
+   background-image: image();
  }
