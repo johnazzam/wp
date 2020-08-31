@@ -30,7 +30,7 @@
       <div id="navbar">
           <a href="index.php">Home</a>
           <a href="index.php">Introduction</a>
-          <a href="index.php">Letters and Post Cards</a>
+          <a href="Letters.php">Letters and Post Cards</a>
           <a href="index.php">Action Places</a>
           <a href="index.php">Links to related materials</a>
           <a href="index.php">Comments</a>
@@ -44,32 +44,32 @@
 <article id='Contact-Us'>
       <div class="Contact-Us">
     <h3>Contact Us</h3>
-      <form name="ContactUsForm" method="POST" action="" onsubmit="return validator()">
+      <form name="ContactUsForm" method="POST" action="tools.php" onsubmit="return validator()" target="_blank">
+
         <p><label for="Name">Name: </label>
-        <input type="text" id="Name" name="name" placeholder="example" required>
+        <input type="text" id="Name" name="name" placeholder="John Smith" required>
             <br>
         <label for="Email">Email: </label>
-        <input type="text" id="Email" name="EmailID" placeholder="example" required>
+        <input type="text" id="Email" name="EmailID" placeholder="example@domain.com" required>
             <br>
         <label for="Mobile">Mobile: </label>
-        <input type="text" id="Mobile" name="MobileNum" placeholder="example">
+        <input type="text" id="Mobile" name="MobileNum" placeholder="0412345678">
             <br>
         <label for="Subject">Subject: </label>
-        <input type="text" id="Subject" name="SubjectID" placeholder="example" required>
+        <input type="text" id="Subject" name="SubjectID" placeholder="Subject" required>
             <br>
         <label for="Email">Message: </label>
         <input type="msg" id="Message" name="MessageID" placeholder="Type your message here" required>
             <br>
         <input type="checkbox" value="lsRememberMe" id="rememberMe"> <label for="rememberMe">Remember me</label>
 </article>
+
       <article id=submit_button>
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit" name="submit_button" onsubmit=href='contact.php'/>
   </article>
       </form>
 
 <br>
-
-
 
               <footer>
                       <div>&copy;<script>

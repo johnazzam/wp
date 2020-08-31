@@ -1,31 +1,71 @@
 <?php
   session_start();
 
-// Put your PHP functions and modules here
-$link = "http://localhost/".$_GET['redirect'].".php";
-echo '<script>window.location ="'.$link.'"</script>';
+    if(isset($_POST["submit"]))
+    {
+     if(empty($_POST["name"]))
+     {
+      $error .= '<p><label class="text-danger">Please Enter your Name</label></p>';
+     }
+     else
+     {
+      $name = clean_text($_POST["name"]);
+      if(!preg_match("/^[a-zA-Z ]*$/",$name))
+      {
+       $error .= '<p><label class="text-danger">Only letters and white space allowed</label></p>';
+      }
+     }
+     if(empty($_POST["email"]))
+     {
+      $error .= '<p><label class="text-danger">Please Enter your Email</label></p>';
+     }
+     else
+     {
+      $email = clean_text($_POST["email"]);
+      if(!filter_var($email, FILTER_VALIDATE_EMAIL))
+      {
+       $error .= '<p><label class="text-danger">Invalid email format</label></p>';
+      }
+     }
+     if(empty($_POST["subject"]))
+     {
+      $error .= '<p><label class="text-danger">Subject is required</label></p>';
+     }
+     else
+     {
+      $subject = clean_text($_POST["subject"]);
+     }
+     if(empty($_POST["message"]))
+     {
+      $error .= '<p><label class="text-danger">Message is required</label></p>';
+     }
+     else
+     {
+      $message = clean_text($_POST["message"]);
+     }
+  }
 
-/*
-if(isset($_POST['submit']))
+$Name = "Name: ";
+$Email  = "Email: ";
+$Number = "Mobile: ";
+$Subject = "Subject: ";
+$Message = "Message: ";
+
+
+  $name = $_POST['name'];
+  $email = $_POST['EmailID'];
+  $mobile = $_POST['MobileNum'];
+  $subject = $_POST['SubjectID'];
+  $message = $_POST['MessageID'];
+  $data = [$Name.$name, $Email.$email, $Number.$mobile, $Subject.$subject, $Message.$message];
+
+if(isset($_POST['submit_button']))
 {
-   contactForm();
+$fp = fopen('mail.txt', 'a');
+fputcsv($fp, $data);
+fclose($fp);
 }
 
-
-function contactForm() {
-
-$Name = $_POST['name'];
-$Email = $_POST['EmailID'];
-$Mobile = $_POST['MobileNum'];
-$Subject = $_POST['SubjectID'];
-$message = $_POST['message'];
-$formcontent="From: $Name \n Email: $Email \n Mobile: $Mobile \n Subject: $Subject \n Message: $message";
-$recipient = "s3767649@student.rmit.edu.au";
-$subject = "Contact Form";
-$mailheader = "From: $email \r\n";
-mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
-echo "Thank You!";
-}
-*/
+echo "Your message has been submitted.";
 
 ?>
