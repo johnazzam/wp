@@ -34,11 +34,11 @@
     <div id="navbar">
       <a href="#home">Home</a>
       <a href="#Introduction">Introduction</a>
-      <a href="#Letters-and-Post-Cards">Letters and Post Cards</a>
+      <a href="Letters.php">Letters and Post Cards</a>
       <a href="#Action-Places">Action Places</a>
       <a href="#Links-to-related-materials">Links to related materials</a>
       <a href="#Comments">Comments</a>
-      <a href="contact.html">Contact Us</a>
+      <a href="contact.php">Contact Us</a>
     </div>
   </nav>
 
@@ -177,11 +177,6 @@
             </p>
           </article>
 
-
-          <article id='Letters-and-Post-Cards'>
-            <div class="Letters-and-Post-Cards">
-              <h3>Letters and Post Cards</h3>
-            </article>
 
             <article id='Action-Places'>
               <div class="Action-Places">
