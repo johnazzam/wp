@@ -42,12 +42,6 @@
   <br>
 
   <?php
-/*
-  $myfile = fopen("/home/eh1/e54061/public_html/wp/letters-home.txt", "r");
-  echo fread($myfile,filesize("/home/eh1/e54061/public_html/wp/letters-home.txt"));
-  fclose($myfile);
-*/
-
 $file_handle = fopen("/home/eh1/e54061/public_html/wp/letters-home.txt", "rb");
 
 while (!feof($file_handle) ) {
