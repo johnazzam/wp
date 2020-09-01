@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Assignment 2 - s3767649</title>
+  <title>Assignment 3 - s3767649</title>
 
   <link rel="stylesheet" href="styles.css">
 

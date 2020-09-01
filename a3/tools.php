@@ -66,6 +66,47 @@ fputcsv($fp, $data);
 fclose($fp);
 }
 
-echo "Your message has been submitted.";
-
 ?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Assignment 3 - s3767649</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Keep wireframe.css for debugging, add your css to style.css -->
+  <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
+  <link id='stylecss' type="text/css" rel="stylesheet" href="style.css?t=<?= filemtime("style.css"); ?>">
+  <script src='../wireframe.js'></script>
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <header>
+    <div>
+      <h2>ANZAC Douglas Raymond Baker - Letters Home</h2>
+
+
+    </div>
+  </header>
+
+
+  <nav>
+    <div id="navbar">
+        <a href="index.php">Home</a>
+        <a href="index.php">Introduction</a>
+        <a href="Letters.php">Letters and Post Cards</a>
+        <a href="index.php">Action Places</a>
+        <a href="index.php">Links to related materials</a>
+        <a href="index.php">Comments</a>
+      <a href="contact.php">Contact Us</a>
+    </div>
+  </nav>
+
+
+<?php echo "Your message has been submitted."; ?>
+</body>

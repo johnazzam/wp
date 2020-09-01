@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Assignment 2 - s3767649</title>
+  <title>Assignment 3 - s3767649</title>
 
   <link rel="stylesheet" href="styles.css">
 
@@ -42,11 +42,24 @@
   <br>
 
   <?php
-
+/*
   $myfile = fopen("/home/eh1/e54061/public_html/wp/letters-home.txt", "r");
   echo fread($myfile,filesize("/home/eh1/e54061/public_html/wp/letters-home.txt"));
   fclose($myfile);
+*/
 
+$file_handle = fopen("/home/eh1/e54061/public_html/wp/letters-home.txt", "rb");
+
+while (!feof($file_handle) ) {
+
+$line_of_text = fgets($file_handle);
+$parts = explode('=', $line_of_text);
+
+print $parts[0]. "<BR>";
+
+}
+
+fclose($file_handle);
     ?>
 
 </body>
